@@ -51,10 +51,101 @@ header nav a {
     max-width: 80%;
     margin: 0 auto;
     padding-top: 1rem;
+    text-align: center;
 }
 
-/*  */
+.container p {
+    font-size: 1.2em;
+}
 
-/* My findings */
+/* Blokken */
+
+.blokken div {
+    display: flex;
+    align-items: center;
+}
+
+.blokken img {
+    width: 50rem;
+}
+
+.blokken p {
+    text-align: center;
+}
+
+/* Rooster */
+
+.rooster {
+    padding: 1rem 0;
+}
+
+.rooster img {
+    width: 50rem;
+}
+
+/* Teachers */
+
+.teachers {
+    padding-bottom: 1rem;
+}
+
+.teachers .persons{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
 
 /* Footer */
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* Responsize */
+
+@media only screen and (max-width: 768px) {
+    /* Header */
+
+    header div {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    header img {
+        margin-bottom: 1rem;
+    }
+
+    /* Body */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Blokken */
+
+    .blokken div {
+        display: block;
+    }
+
+    .blokken img {
+        width: 30rem;
+    }
+
+    /* Rooster */
+
+    .rooster img {
+        width: 30rem;
+    }
+
+    /* Teachers */
+
+    .teachers .persons {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
+}
