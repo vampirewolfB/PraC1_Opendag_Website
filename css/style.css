@@ -16,21 +16,32 @@ header div {
     align-items: center;
     padding: 1rem 0;
 }
+
 header img {
     width: 10em;
 }
 
 header nav button {
-    border-radius: 1rem;
-    border-color: #004fff;
-    padding: 0.5rem;
-    margin-left: 0.5rem;
     background-color: #004fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 0.5rem;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    box-shadow: 0 1rem 1.1rem 0 rgba(86,221,239,0.24),0 17px 50px 0 rgba(86,221,239,0.19);
+}
+
+header nav button:hover {
+    box-shadow: none;
 }
 
 header nav a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: large;
 }
 
@@ -42,5 +53,8 @@ header nav a {
     padding-top: 1rem;
 }
 
+/*  */
+
 /* My findings */
 
+/* Footer */
