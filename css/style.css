@@ -3,149 +3,71 @@
     padding: 0;
 }
 
-/* Haeder  */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header  */
+
 header {
-    background-color: black;
+    position: sticky;
+    top: 0;
+    background-color: #56ddef;
+    padding: 1.25rem 0;
 }
 
 header div {
     max-width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
 }
 
 header img {
-    width: 10em;
+    width: 6.25rem;
 }
 
-header nav button {
-    background-color: #004fff;
+header h1 {
+    color: #78034b;
+}
+
+/* Navbar */
+
+header nav {
+  margin-top: 0.5rem;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
     border: none;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 0.5rem;
-    transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-    box-shadow: 0 1rem 1.1rem 0 rgba(86,221,239,0.24),0 17px 50px 0 rgba(86,221,239,0.19);
-}
-
-header nav button:hover {
-    box-shadow: none;
-}
-
-header nav a {
-    text-decoration: none;
-    color: white;
-    font-size: large;
-}
-
-/* Body  */
-
-.container {
-    max-width: 80%;
-    margin: 0 auto;
-    padding-top: 1rem;
-    text-align: center;
-}
-
-.container p {
-    font-size: 1.2em;
-}
-
-/* Blokken */
-
-.blokken div {
-    display: flex;
-    align-items: center;
-}
-
-.blokken img {
-    width: 50rem;
-}
-
-.blokken p {
-    text-align: center;
-}
-
-/* Rooster */
-
-.rooster {
-    padding: 1rem 0;
-}
-
-.rooster img {
-    width: 50rem;
-}
-
-/* Teachers */
-
-.teachers {
-    padding-bottom: 1rem;
-}
-
-.teachers .persons{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-/* Footer */
-
-footer {
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
-/* Responsize */
-
-@media only screen and (max-width: 768px) {
-    /* Header */
-
-    header div {
-        max-width: 100%;
-        flex-direction: column;
-    }
-
-    header img {
-        margin-bottom: 1rem;
-    }
-
-    /* Body */
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    /* Blokken */
-
-    .blokken div {
-        display: block;
-    }
-
-    .blokken img {
-        width: 30rem;
-    }
-
-    /* Rooster */
-
-    .rooster img {
-        width: 30rem;
-    }
-
-    /* Teachers */
-
-    .teachers .persons {
-        display: grid;
-        grid-template-columns: repeat(3, 3fr);
-    }
-}
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
