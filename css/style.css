@@ -88,3 +88,12 @@ main {
 .schedule .container p {
   margin: 0.5rem 0;
 }
+
+/* Teachers */
+
+
+.teachers .persons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
