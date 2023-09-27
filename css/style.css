@@ -32,42 +32,59 @@ header h1 {
 /* Navbar */
 
 header nav {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
+header nav button {
+  text-align: center;
+  border: none;
+  background-color: #56ddef;
+  color: #78034b;
+  text-decoration: underline;
+  font-size: 1em;
+}
 
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
+header nav button:hover{
+  color: #69197c;
+}
+
+header nav .active {
+  color: #660404;
+}
+
+/* Main */
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
+}
+
+/* Home */
+
+.home {
+  display: block;
+}
+
+/* Schedule */
+
+.schedule p {
+  margin: 1rem 0;
+}
+
+.schedule img{
+  max-width: 80%;
+}
+
+.schedule .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.schedule .container p {
+  margin: 0.5rem 0;
+}

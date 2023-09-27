@@ -17,6 +17,7 @@
                 Software developer
             </h1>
             <nav>
+                <button class="tablinks active" onclick="changeContent(event, 'home')">Home</button>
                 <button class="tablinks" onclick="changeContent(event, 'schedule')">Rooster</button>
                 <button class="tablinks" onclick="changeContent(event, 'bloks')">Blokken</button>
                 <button class="tablinks" onclick="changeContent(event, 'teachers')">Docenten</button>
@@ -26,20 +27,61 @@
 
     <main>
         <div>
-            <div id="schedule" class="tabcontent">
+            <div id="home" class="tabcontent home">
+                <h3>Home</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsum hic cupiditate quam accusamus iste odio repellat totam, ducimus esse laboriosam molestias nam optio corrupti tempora inventore quis tempore impedit?</p>
+            </div>
+            <div id="schedule" class="tabcontent schedule">
                 <h3>Rooster</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat et aspernatur commodi, perspiciatis soluta laboriosam velit itaque repellat blanditiis enim voluptatibus doloremque, nostrum mollitia odio eos est amet, doloribus suscipit.</p>
-              </div>
-              
-              <div id="bloks" class="tabcontent">
+                <p>Op de afbeelding kun je het rooster zien. Dit is ongeveer hoe het rooster uit zou kunnen zien. Op de eerste regel in het dikgedrukt in een blok kun je links het vak en rechts je klas zien. Daaronder zie je de tijd wanneer je aanwezig moet zijn. Onder dat kun je links de code van de docent zien en rechts in welke klas je zit. Onder de afbeelding kun je een beschrijving vinden van de vakken.</p>
+                <img src="images/Rooster eerste leerjaar.png" alt="rooster">
+                <div class="container">
+                    <div>
+                        <h3>Web development | Web</h3>
+                        <p>Bij dit vak leer je hoe je online webapplicaties maakt. In het eerste leerjaar ga je vooral aan de slag met HTML, CSS, PHP en JavaScript.</p>    
+                    </div>
+                    <div>
+                        <h3>Native development | Native</h3>
+                        <p>Bij native begin je met de microbit om een basis te krijgen voor het programeren. Daanaar ga je aan de slag met python om console applicaties te maken. Later begin je met C# eerst console daarna ga je "UWP"(universel windows platform) applicaties maken met C# en XAML.</p>    
+                    </div>
+                    <div>
+                        <h3>Pro</h3>
+                        <p>Hier leer je alles rondom het programmeren. Hier leer je bijvoorbeeld hoe je wirefames of flowcharts maakt en waar ze voor dienen. Ook zal je leren over verschillende plan methodes zoals agile and waterfall. Twee voorbeelden hiervan zijn scrum(agile) en prince2(waterfall)</p>    
+                    </div>
+                    <div>
+                        <h3>Praktijk | Pra</h3>
+                        <p>Praktijk hier maak je praktische opdrachten in groepjes. In het begin zal het met een groep van 2 tot 3 zijn, maar later zullen groter worden. De opdrachten hebben samenhang met native en web</p>    
+                    </div>
+                    <div>
+                        <h3>Digitale vaardigheden | Div</h3>
+                        <p>Hier leer je vooral met word, excell en powerpoint omgaan. Ook leer je hoe je je mappen moet organiseren, hoe je cybersecurity moet doen en hoe je met cyberbullying en andere dingen kan omgaan.</p>    
+                    </div>
+                    <div>
+                        <h3>Generieke vakken</h3>
+                        <p>Dit zijn de vakken die standaard verplicht zijn. Dit is Nederlands, Engels, Rekenen en Burgerschap. Hier zal weinig veranderen met wat je op het vmbo krijgt.</p>    
+                    </div>
+                    <div>
+                        <h3>Codelab</h3>
+                        <p>Hier kun je dingen inhalen die je nog niet af had. Of meer uitleg krijgen als je nog iets niet begrijpt.</p>    
+                    </div>
+                    <div>
+                        <h3>Mentoruur</h3>
+                        <p>Dit is vooral klassikaal belangrijke dingen bespreken met de mentor. Ook zal je hier werken aan LOB(Loopbaanoriëntatie) waar je gaat kijken naar wat je wilt doen later.</p>    
+                    </div>
+                    <div>
+                        <h3>Por | Portofolio</h3>
+                        <p>Hier hoef je niet naar toe te gaan tenzij je een 1 op 1 gesprek hebt met je mentor. Dit vind plaats 4x per blok. Je bespreekt dan je voortgang en hoe jij ervoor staat.</p>
+                    </div> 
+                </div>
+            </div>
+            <div id="bloks" class="tabcontent">
                 <h3>Blokken</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam sunt voluptas. Ab totam autem cupiditate, reiciendis ipsum, tempora quisquam exercitationem rem dicta quia expedita porro, iure nobis voluptas eos?</p> 
-              </div>
-              
-              <div id="teachers" class="tabcontent">
+            </div>            
+            <div id="teachers" class="tabcontent">
                 <h3>Docenten</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique cum saepe veritatis libero voluptatem quaerat cupiditate mollitia, perferendis enim? Totam omnis nostrum accusamus, nam ratione quibusdam voluptates molestiae nesciunt.</p>
-              </div>
+            </div>
         </div>
     </main>
 
