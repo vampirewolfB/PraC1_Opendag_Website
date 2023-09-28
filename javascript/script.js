@@ -1,4 +1,4 @@
-function changeContent(evt, sectionName) {
+function ChangeContent(evt, sectionName) {
     var i, tabcontent, tablinks;
     
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,4 +13,11 @@ function changeContent(evt, sectionName) {
 
     document.getElementById(sectionName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+function DarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode")
+
+  
 }

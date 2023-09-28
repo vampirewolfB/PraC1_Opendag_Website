@@ -17,10 +17,11 @@
                 Software developer
             </h1>
             <nav>
-                <button class="tablinks active" onclick="changeContent(event, 'home')">Home</button>
-                <button class="tablinks" onclick="changeContent(event, 'schedule')">Rooster</button>
-                <button class="tablinks" onclick="changeContent(event, 'bloks')">Blokken</button>
-                <button class="tablinks" onclick="changeContent(event, 'teachers')">Docenten</button>
+                <button class="tablinks active" onclick="ChangeContent(event, 'home')">Home</button>
+                <button class="tablinks" onclick="ChangeContent(event, 'schedule')">Rooster</button>
+                <button class="tablinks" onclick="ChangeContent(event, 'bloks')">Blokken</button>
+                <button class="tablinks" onclick="ChangeContent(event, 'teachers')">Docenten</button>
+                <button class="darkModeButton" onclick="DarkMode()">DarkMode on/off</button>
             </nav>
         </div>
     </header>
@@ -29,7 +30,7 @@
         <div>
             <div id="home" class="tabcontent home">
                 <h3>Home</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsum hic cupiditate quam accusamus iste odio repellat totam, ducimus esse laboriosam molestias nam optio corrupti tempora inventore quis tempore impedit?</p>
+                <p>Welcome op de curio informatie webiste. Hier kun je informatie vinden over de opleiding van software devloper.</p>
             </div>
             <div id="schedule" class="tabcontent schedule">
                 <h3>Rooster</h3>
@@ -74,9 +75,10 @@
                     </div> 
                 </div>
             </div>
-            <div id="bloks" class="tabcontent">
+            <div id="bloks" class="tabcontent bloks">
                 <h3>Blokken</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam sunt voluptas. Ab totam autem cupiditate, reiciendis ipsum, tempora quisquam exercitationem rem dicta quia expedita porro, iure nobis voluptas eos?</p> 
+                <p>De leer periode is 3 of 4 jaar. Iedereen begint in blok a daarna wordt gekken of je kan versnellen. Als je versnelt zal je 3 jaar over de opleiding doen in plaats van 4 jaar. Als je versnelt zul je blok E overslaan. Een overzicht hiervan kun je op de afbeelding zien.<br>In dark mode is de nummering niet te zien dus als je dit wilt zien moet je het uit zetten!!</p>
+                <img src="images/Opleidingsoverzicht3.png" alt="blokken">
             </div>            
             <div id="teachers" class="tabcontent teachers">
                 <h3>Docenten</h3>
